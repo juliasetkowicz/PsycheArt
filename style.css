@@ -127,11 +127,52 @@ body{
 }
  
 
-.form {
+.side__contact-form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
     min-height: 100vh;
+}
+
+
+.grid {
+display: grid;
+grid-template-columns: 50% 50%;
+grid-template-areas: "header header"
+"menu menu"
+"content content"
+"footer footer"
+}
+
+.header {
+    grid-area: header;
+    text-align: center;
+}
+.navigation {
+    grid-area: menu;
+    display: flex;
+    flex-direction: column;
+    padding: 5vw;
+    right: 5vw;
+    
+}
+.content {
+    grid-area: content;
+    flex-wrap: wrap;
+}
+.footer{
+
+}
+.header__title--red {
+color: red;
+}
+.header__title  {
+    display: flex;
+    justify-content: center;
+}
+.header__button  {
+    display: flex;
+    justify-content: center;
 }

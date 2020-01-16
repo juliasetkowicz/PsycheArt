@@ -347,3 +347,97 @@
   [hidden] {
     display: none;
   }
+
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>art</title>
+</head>
+<body>
+    <main class="side__art-grid">
+        <header clas="side__art-header"> ART </header>
+        <nav class="side__navigation-menu">
+                <ul class="side__navigation-list" >
+                    
+                    <li class="side__navigation-item"> 
+                        <a href="shop.html" class="side__navigation-link" alt="shop">shop</a>
+                    </li class="side__navigation-item">
+       
+                    <li class="side__navigation-item">
+                        <a href="art.html" class="side__navigation-link" alt="art">art</a>
+                    </li>
+                    <li class="side__navigation-item">
+                       <a href="about.html" class="side__navigation-link" alt="about">about</a>
+                    </li>
+       
+                    <li class="side__navigation-item">
+                       <a href="contact.html" class="side__navigation-link" alt="contact">contact</a>
+                   </li>
+                </ul>
+            </nav>
+<div class="side__art-content">
+    <div class="side__art-grid-item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad impedit illum magnam autem tempore nam eum cumque laboriosam sit exercitationem omnis at quos culpa facilis tempora, veritatis, eius ut? Odit!</div>
+
+    <div class="side__art-grid-item-img"> <img src="img2.jpg"></div>
+
+    <div class="side__art-grid-item-img"> <img src="img4.jpg" ></div>
+
+    <div class="side__art-grid-item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quaerat labore, laboriosam debitis praesentium pariatur veniam maxime culpa natus beatae et repudiandae, consequuntur tempore esse eum animi nobis eligendi quos.</div>
+
+    <div class="side__art-grid-item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur suscipit in exercitationem nisi sunt cupiditate consectetur quas error nam? Ducimus similique magni, quam maiores temporibus est quas amet voluptatibus eveniet.</div>
+    <div class="side__art-grid-item-img"> <img src="img3.jpg"> </div>
+</div>
+<footer class="side__art-footer">PsychArt MARTA GRUDZIŃSKA</footer>
+</main>
+</body>
+</html>
+
+
+
+
+
+
+
+side__art-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 16px;
+  grid-template-areas: "header header"
+  "menu menu"
+  "content content"
+  "content content"
+  "content content";
+  }
+  side__art-grid-item-text {
+    
+  }
+  side__art-grid-item-img {
+      background: #FC4535;
+  }
+  side__art img {
+      max-height: 400px;
+      margin: 10px auto;
+     
+  }
+  side__art-header {
+      grid-area: header;
+      text-align: center;
+  }
+  side__art-navigation-menu {
+      grid-area: menu;
+  }
+  side__art-grid-item-text {
+   grid-area: content;
+  }
+  side__art-grid-item-img {
+      grid-area: content;
+  }
+  side__art-footer {
+      grid-area: footer;
+  }
+   
